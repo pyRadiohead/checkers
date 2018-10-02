@@ -1,0 +1,100 @@
+html {
+	height: 100%;
+}
+
+html,
+body {
+	min-height: 100%;
+	background: linear-gradient(45deg, red, blue);
+
+
+}
+
+* {
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+/* Layout */
+.ba-container {
+	position: absolute;
+	top: 10%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 80vh;
+	width: 80vh;
+	padding: 20px;
+	background: #fff;
+
+}
+
+.ba-container:hover li:not(:hover) {
+	opacity: 0.8;
+}
+
+
+
+.ba-container .row {
+	position: relative;
+	height: 12.5%;
+	border: 1px solid #ccc;
+}
+
+.cell-row {
+	list-style: none;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+.cell-row li {
+	position: absolute;
+	width: 12.5%;
+	height: 100%;
+
+}
+
+
+.cell-row li:nth-child(1) {
+	left: 0;
+}
+
+.ba-container .row:nth-child(even) .cell-row li:nth-child(even) {
+	background: #ccc;
+}
+
+.ba-container .row:nth-child(odd) .cell-row li:nth-child(odd) {
+	background: #ccc;
+}
+
+
+
+.cell-row li:nth-child(2) {
+	left: 12.5%;
+}
+
+.cell-row li:nth-child(3) {
+	left: 25%;
+}
+
+.cell-row li:nth-child(4) {
+	left: 37.5%;
+}
+
+.cell-row li:nth-child(5) {
+	left: 50%;
+}
+
+.cell-row li:nth-child(6) {
+	left: 62.5%;
+}
+
+.cell-row li:nth-child(7) {
+	left: 75%;
+}
+
+.cell-row li:nth-child(8) {
+	left: 87.5%;
+}
